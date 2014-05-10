@@ -1,0 +1,43 @@
+# http://www.cs-ware.de/blog/archives/175
+#
+# CC-by-sa
+#
+# members of email made in germany
+email.de										secure match=.web.de
+freenet.de										secure match=.freenet.de
+gmx.net											secure match=.gmx.net
+gmx.de											secure match=.gmx.net
+gmx.at											secure match=.gmx.net
+t-online.de										secure match=.t-online.de
+web.de											secure match=.web.de
+# other mail providers
+aol.com											secure match=.aol.com
+arcor.de										secure match=.arcor.de
+gmail.com										secure match=.google.com
+googlemail.com									secure match=.google.com
+google.com										secure match=.google.com
+kabelmail.de									secure match=.xworks.net
+hotmail.com										secure match=.hotmail.com
+outlook.com										secure match=.hotmail.com
+hotmail.de										secure match=.hotmail.com
+yahoo.com										secure match=.yahoodns.net
+yahoo.de										secure match=.yahoodns.net
+# universities
+.hu-berlin.de									secure match=.hu-berlin.de
+ostfalia.de										secure match=.sonia.de
+fh-hannover.de									secure match=.fh-hannover.de
+hs-hannover.de									secure match=.fh-hannover.de
+uos.de											secure match=.uni-osnabrueck.de
+uni-osnabrueck.de								secure match=.uni-osnabrueck.de
+.tu-clausthal.de								secure match=.mx.srv.dfn.de:.tu-clausthal.de
+# states of germany
+.bayern.de										encrypt # mx has selfsigned cert
+.berlin.de										secure match=.berlin.de
+.hessen.de										secure match=.hessen.de
+.niedersachsen.de								secure match=.niedersachsen.de
+# banks
+commerzbank.com									secure match=.commerzbank.com
+# others
+bundestag.de									secure match=.dbtg.de
+bundeswehr.org									encrypt # one mx has a selfsigned cert
+heise.de										secure match=.heise.de
