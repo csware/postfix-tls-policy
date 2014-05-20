@@ -39,6 +39,7 @@ uni-osnabrueck.de								secure match=.uni-osnabrueck.de
 .niedersachsen.de								secure match=.niedersachsen.de
 # banks
 commerzbank.com									secure match=.commerzbank.com
+postbank.de										secure match=.postbank.de
 # others
 bundestag.de									secure match=.dbtg.de
 bundeswehr.org									encrypt # one mx has a selfsigned cert
