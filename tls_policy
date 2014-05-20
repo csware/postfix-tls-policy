@@ -19,9 +19,9 @@ google.com										secure match=.google.com
 kabelmail.de									secure match=.xworks.net
 mailbox.org										secure match=.mailbox.org
 posteo.de										secure match=.posteo.de
-hotmail.com										secure match=.hotmail.com
-outlook.com										secure match=.hotmail.com
-hotmail.de										secure match=.hotmail.com
+#hotmail.com										none
+#outlook.com										none
+#hotmail.de										none
 yahoo.com										secure match=.yahoodns.net
 yahoo.de										secure match=.yahoodns.net
 # universities
