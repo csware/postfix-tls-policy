@@ -29,8 +29,8 @@ yahoo.de										secure match=.yahoodns.net
 ostfalia.de										secure match=.sonia.de
 fh-hannover.de									secure match=.fh-hannover.de
 hs-hannover.de									secure match=.fh-hannover.de
-uos.de											secure match=.uni-osnabrueck.de
-uni-osnabrueck.de								secure match=.uni-osnabrueck.de
+#uos.de											secure match=.uni-osnabrueck.de
+#uni-osnabrueck.de								secure match=.uni-osnabrueck.de
 .tu-clausthal.de								secure match=.mx.srv.dfn.de:.tu-clausthal.de
 # states of germany
 .bayern.de										encrypt # mx has selfsigned cert
