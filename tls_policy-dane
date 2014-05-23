@@ -34,7 +34,8 @@ hs-hannover.de									secure match=.fh-hannover.de
 .tu-clausthal.de								secure match=.mx.srv.dfn.de:.tu-clausthal.de
 # states of germany
 .bund.de										dane-only
-.bayern.de										encrypt # mx has selfsigned cert
+# .bayern.de: mx has selfsigned cert
+.bayern.de										encrypt
 .berlin.de										secure match=.berlin.de
 .hessen.de										secure match=.hessen.de
 .niedersachsen.de								secure match=.niedersachsen.de
@@ -43,5 +44,6 @@ commerzbank.com									secure match=.commerzbank.com
 postbank.de										secure match=.postbank.de
 # others
 bundestag.de									secure match=.dbtg.de
-bundeswehr.org									encrypt # one mx has a selfsigned cert
+# bundeswehr.org: one mx has a selfsigned cert
+bundeswehr.org									encrypt
 heise.de										secure match=.heise.de
