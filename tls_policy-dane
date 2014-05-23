@@ -33,6 +33,7 @@ hs-hannover.de									secure match=.fh-hannover.de
 #uni-osnabrueck.de								secure match=.uni-osnabrueck.de
 .tu-clausthal.de								secure match=.mx.srv.dfn.de:.tu-clausthal.de
 # states of germany
+.bund.de										dane-only
 .bayern.de										encrypt # mx has selfsigned cert
 .berlin.de										secure match=.berlin.de
 .hessen.de										secure match=.hessen.de
