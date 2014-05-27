@@ -5,9 +5,14 @@
 # members of email made in germany
 email.de										secure match=.web.de
 freenet.de										secure match=.freenet.de
-gmx.net											secure match=.gmx.net
-gmx.de											secure match=.gmx.net
 gmx.at											secure match=.gmx.net
+gmx.ch											secure match=.gmx.net
+gmx.com											secure match=.gmx.net
+gmx.de											secure match=.gmx.net
+gmx.es											secure match=.gmx.net
+gmx.fr											secure match=.gmx.net
+gmx.it											secure match=.gmx.net
+gmx.net											secure match=.gmx.net
 t-online.de										secure match=.t-online.de
 web.de											secure match=.web.de
 # other mail providers
