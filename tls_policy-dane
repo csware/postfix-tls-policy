@@ -194,4 +194,5 @@ postbank.de										secure match=.postbank.de
 bundestag.de									secure match=.dbtg.de
 # bundeswehr.org: one mx has a selfsigned cert
 bundeswehr.org									encrypt
+.debian.org										dane-only
 heise.de										secure match=.heise.de
