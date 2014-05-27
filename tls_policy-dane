@@ -6,13 +6,25 @@
 email.de										secure match=.web.de
 freenet.de										secure match=.freenet.de
 gmx.at											secure match=.gmx.net
+gmx.biz											secure match=.gmx.net
 gmx.ch											secure match=.gmx.net
+gmx.co.uk										secure match=.gmx.net
 gmx.com											secure match=.gmx.net
+gmx.com.my										secure match=.gmx.net
 gmx.de											secure match=.gmx.net
 gmx.es											secure match=.gmx.net
+gmx.eu											secure match=.gmx.net
 gmx.fr											secure match=.gmx.net
+gmx.hk											secure match=.gmx.net
+gmx.info										secure match=.gmx.net
 gmx.it											secure match=.gmx.net
 gmx.net											secure match=.gmx.net
+gmx.org											secure match=.gmx.net
+gmx.ph											secure match=.gmx.net
+gmx.pt											secure match=.gmx.net
+gmx.sg											secure match=.gmx.net
+gmx.tm											secure match=.gmx.net
+gmx.us											secure match=.gmx.net
 t-online.de										secure match=.t-online.de
 web.de											secure match=.web.de
 # other mail providers
