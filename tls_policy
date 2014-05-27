@@ -74,6 +74,7 @@ yahoo.ro										secure match=.yahoodns.net
 yahoo.ru										secure match=.yahoodns.net
 yahoo.se										secure match=.yahoodns.net
 ymail.com										secure match=.yahoodns.net
+yandex.ru										secure match=mx.yandex.net:mx.yandex.ru
 # universities
 .hu-berlin.de									secure match=.hu-berlin.de
 ostfalia.de										secure match=.sonia.de
