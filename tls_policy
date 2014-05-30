@@ -147,6 +147,7 @@ posteo.de										secure match=.posteo.de
 #outlook.ph										secure match=.hotmail.com:.outlook.com
 #outlook.sg										secure match=.hotmail.com:.outlook.com
 #windowslive.com									secure match=.hotmail.com:.outlook.com
+vodafone.de										secure match=.vodafone.de
 yahoo.ae										secure match=.yahoodns.net
 yahoo.at										secure match=.yahoodns.net
 yahoo.be										secure match=.yahoodns.net
