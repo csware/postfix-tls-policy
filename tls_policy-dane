@@ -205,7 +205,7 @@ ti.bund.de										dane
 .bund.de										dane-only
 # .bayern.de: mx has selfsigned cert
 .bayern.de										encrypt
-.berlin.de										secure match=.berlin.de
+.berlin.de										secure match=.daybyday.de
 .hessen.de										secure match=.hessen.de
 .niedersachsen.de								secure match=.niedersachsen.de
 # banks
