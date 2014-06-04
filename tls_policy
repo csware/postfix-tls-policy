@@ -65,6 +65,7 @@ google.com										secure match=.google.com
 kabelmail.de									secure match=.xworks.net
 mail.de											secure match=.mail.de
 mailbox.org										secure match=.mailbox.org
+me.com											may
 posteo.de										secure match=.posteo.de
 # for Microsoft services only some of the mx servers support STARTTLS; if Postfix connects to a server which does not support STARTTLS postfix tires the next server, however, it happened to me that mails stayed > 6h in the queue (that's why the following lines are commented)
 #hotmail.at										secure match=.hotmail.com:.outlook.com
