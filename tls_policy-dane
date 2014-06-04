@@ -201,6 +201,7 @@ hs-hannover.de									secure match=.fh-hannover.de
 #uni-osnabrueck.de								secure match=.uni-osnabrueck.de
 .tu-clausthal.de								secure match=.mx.srv.dfn.de:.tu-clausthal.de
 # states of germany
+ti.bund.de										dane
 .bund.de										dane-only
 # .bayern.de: mx has selfsigned cert
 .bayern.de										encrypt
