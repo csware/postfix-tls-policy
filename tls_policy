@@ -215,6 +215,6 @@ postbank.de										secure match=.postbank.de
 # others
 bundestag.de									secure match=.dbtg.de
 # bundeswehr.org: one mx has a selfsigned cert
-bundeswehr.org									encrypt
+bundeswehr.org									secure match=.bwehr.de
 .debian.org										secure match=.debian.org
 heise.de										secure match=.heise.de
