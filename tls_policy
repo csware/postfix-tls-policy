@@ -62,7 +62,9 @@ gmail.com										secure match=.google.com
 googlegroups.com								secure match=.google.com
 googlemail.com									secure match=.google.com
 google.com										secure match=.google.com
+icloud.com										may
 kabelmail.de									secure match=.xworks.net
+mac.com											may
 mail.de											secure match=.mail.de
 mailbox.org										secure match=.mailbox.org
 me.com											may
