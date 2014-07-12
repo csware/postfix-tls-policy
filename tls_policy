@@ -196,7 +196,7 @@ ymail.com										secure match=.yahoodns.net
 yandex.ru										secure match=mx.yandex.net:mx.yandex.ru
 # universities
 informatik.hu-berlin.de							secure match=.hu-berlin.de
-hu-berlin.de									secure match=.hu-berlin.de
+hu-berlin.de									may
 ostfalia.de										secure match=.sonia.de
 fh-hannover.de									secure match=.fh-hannover.de
 hs-hannover.de									secure match=.fh-hannover.de
