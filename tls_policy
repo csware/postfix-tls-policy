@@ -213,8 +213,30 @@ hs-hannover.de									secure match=.fh-hannover.de
 commerzbank.com									secure match=.commerzbank.com
 postbank.de										secure match=.postbank.de
 # others
+bfr.bund.de										secure match=.bund.de
+bmwi.bund.de									secure match=.bund.de
+bsi.bund.de										secure match=.bund.de
+bmg.bund.de										secure match=.bund.de
+bkm.bmi.bund.de									secure match=.bund.de
+bmub.bund.de									secure match=.bund.de
+bmvbs.bund.de									secure match=.bund.de
+bamf.bund.de									secure match=.bund.de
+bfdi.bund.de									secure match=.bund.de
+polizei.bund.de									secure match=.bund.de
+bmelv.bund.de									secure match=.bund.de
+bakoev.bund.de									secure match=.bund.de
+bdbos.bund.de									secure match=.bund.de
+bverwg.bund.de									secure match=.bund.de
+bmas.bund.de									secure match=.bund.de
+bmfsfj.bund.de									secure match=.bund.de
+bafza.bund.de									secure match=.bund.de
+bzst.bund.de									secure match=.bund.de
+badv.bund.de									secure match=.bund.de
 ti.bund.de										may
-.bund.de										secure match=.bund.de
+wsv.bund.de										may
+barch.bund.de									secure match=.bund.de:.secunet.ivbv.net
+bstu.bund.de									secure match=.bund.de:.secunet.ivbv.net
+bund.de											secure match=.bund.de
 bundestag.de									secure match=.dbtg.de
 # bundeswehr.org: one mx has a selfsigned cert
 bundeswehr.org									secure match=.bwehr.de

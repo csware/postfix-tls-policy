@@ -213,8 +213,30 @@ hs-hannover.de									secure match=.fh-hannover.de
 commerzbank.com									secure match=.commerzbank.com
 postbank.de										secure match=.postbank.de
 # others
-ti.bund.de										may
-.bund.de										secure match=.bund.de
+bfr.bund.de										secure match=.bund.de
+bmwi.bund.de									secure match=.bund.de
+bzst.bund.de									secure match=.bund.de
+badv.bund.de									secure match=.bund.de
+bmg.bund.de										dane-only
+bkm.bmi.bund.de									dane-only
+bmub.bund.de									dane-only
+bmvbs.bund.de									dane-only
+bamf.bund.de									dane-only
+bfdi.bund.de									dane-only
+polizei.bund.de									dane-only
+bmelv.bund.de									dane-only
+bakoev.bund.de									dane-only
+bdbos.bund.de									dane-only
+bverwg.bund.de									dane-only
+bmas.bund.de									dane-only
+bmfsfj.bund.de									dane-only
+bafza.bund.de									dane-only
+bsi.bund.de										dane-only
+ti.bund.de										dane
+wsv.bund.de										dane
+barch.bund.de									secure match=.bund.de:.secunet.ivbv.net
+bstu.bund.de									secure match=.bund.de:.secunet.ivbv.net
+bund.de											dane-only
 bundestag.de									secure match=.dbtg.de
 bundeswehr.org									secure match=.bwehr.de
 .debian.org										dane-only
