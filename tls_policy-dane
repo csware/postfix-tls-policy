@@ -212,6 +212,10 @@ hs-hannover.de									secure match=.fh-hannover.de
 # banks
 commerzbank.com									secure match=.commerzbank.com
 postbank.de										secure match=.postbank.de
+# insurances
+.aok.de											encrypt
+barmer-gek.de									secure match=.t-systems.com
+tk.de											secure match=.tk.de
 # others
 bfr.bund.de										secure match=.bund.de
 bmwi.bund.de									secure match=.bund.de
