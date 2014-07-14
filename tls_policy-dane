@@ -65,7 +65,7 @@ google.com										secure match=.google.com
 icloud.com										encrypt
 kabelmail.de									secure match=.xworks.net
 mac.com											encrypt
-mail.de											secure match=.mail.de
+mail.de											dane-only
 mailbox.org										dane-only
 me.com											encrypt
 posteo.de										dane-only
