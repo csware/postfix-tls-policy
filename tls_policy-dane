@@ -62,12 +62,12 @@ gmail.com										secure match=.google.com
 googlegroups.com								secure match=.google.com
 googlemail.com									secure match=.google.com
 google.com										secure match=.google.com
-icloud.com										encrypt
+icloud.com										secure match=.mail.icloud.com
 kabelmail.de									secure match=.xworks.net
-mac.com											encrypt
+mac.com											secure match=.mail.icloud.com
 mail.de											dane-only
 mailbox.org										dane-only
-me.com											encrypt
+me.com											secure match=.mail.icloud.com
 posteo.de										dane-only
 hotmail.at										secure match=.hotmail.com:.outlook.com
 hotmail.be										secure match=.hotmail.com:.outlook.com
