@@ -242,3 +242,5 @@ bundestag.de									secure match=.dbtg.de
 bundeswehr.org									secure match=.bwehr.de
 .debian.org										dane-only
 heise.de										secure match=.heise.de
+#broken DNSSEC-TLSA
+mauricedrummen.nl								may
