@@ -242,4 +242,5 @@ bundestag.de									secure match=.dbtg.de
 # bundeswehr.org: one mx has a selfsigned cert
 bundeswehr.org									secure match=.bwehr.de
 .debian.org										secure match=.debian.org
+.torproject.org									encrypt
 heise.de										secure match=.heise.de
