@@ -213,10 +213,10 @@ postbank.de										secure match=.postbank.de
 barmer-gek.de									secure match=.t-systems.com
 tk.de											secure match=.tk.de
 # others
-bfr.bund.de										dane
-bmwi.bund.de									secure match=.bund.de
-bzst.bund.de									dane
-badv.bund.de									dane
+bfr.bund.de										encrypt
+bmwi.bund.de									encrypt
+bzst.bund.de									encrypt
+badv.bund.de									encrypt
 bmg.bund.de										dane-only
 bkm.bmi.bund.de									dane-only
 bmub.bund.de									dane-only
@@ -233,9 +233,9 @@ bmfsfj.bund.de									dane-only
 bafza.bund.de									dane-only
 bsi.bund.de										dane-only
 ti.bund.de										dane
-wsv.bund.de										dane
-barch.bund.de									dane
-bstu.bund.de									dane
+wsv.bund.de										secure match=.bvbs-wan.de:.dwd.de
+barch.bund.de									encrypt
+bstu.bund.de									dane-only
 bund.de											dane-only
 bundestag.de									secure match=.dbtg.de
 bundeswehr.org									secure match=.bwehr.de

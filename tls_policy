@@ -214,8 +214,8 @@ postbank.de										secure match=.postbank.de
 barmer-gek.de									secure match=.t-systems.com
 tk.de											secure match=.tk.de
 # others
-bfr.bund.de										may
-bmwi.bund.de									secure match=.bund.de
+bfr.bund.de										encrypt
+bmwi.bund.de									encrypt
 bsi.bund.de										secure match=.bund.de
 bmg.bund.de										secure match=.bund.de
 bkm.bmi.bund.de									secure match=.bund.de
@@ -231,12 +231,12 @@ bverwg.bund.de									secure match=.bund.de
 bmas.bund.de									secure match=.bund.de
 bmfsfj.bund.de									secure match=.bund.de
 bafza.bund.de									secure match=.bund.de
-bzst.bund.de									may
-badv.bund.de									may
+bzst.bund.de									encrypt
+badv.bund.de									encrypt
 ti.bund.de										may
-wsv.bund.de										may
-barch.bund.de									may
-bstu.bund.de									may
+wsv.bund.de										encrypt
+barch.bund.de									encrypt
+bstu.bund.de									secure match=.bund.de
 bund.de											secure match=.bund.de
 bundestag.de									secure match=.dbtg.de
 # bundeswehr.org: one mx has a selfsigned cert
