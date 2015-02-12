@@ -29,6 +29,7 @@ online.de										secure match=.kundenserver.de
 t-online.de										secure match=.t-online.de
 web.de											secure match=.web.de
 # other mail providers
+126.com											secure match=.126.com
 aol.asia										secure match=mx.aol.com:.mx.aol.com
 aol.at											secure match=mx.aol.com:.mx.aol.com
 aol.be											secure match=mx.aol.com:.mx.aol.com
@@ -130,6 +131,7 @@ live.ru											secure match=.hotmail.com:.outlook.com
 live.se											secure match=.hotmail.com:.outlook.com
 livemail.tw										secure match=.hotmail.com:.outlook.com
 msn.cn											secure match=.hotmail.com:.outlook.com
+netcologne.de									secure match=.netcologne.de
 outlook.at										secure match=.hotmail.com:.outlook.com
 outlook.be										secure match=.hotmail.com:.outlook.com
 outlook.com										secure match=.hotmail.com:.outlook.com
