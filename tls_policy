@@ -218,28 +218,28 @@ tk.de											secure match=.tk.de
 # others
 bfr.bund.de										encrypt
 bmwi.bund.de									encrypt
-bsi.bund.de										secure match=.bund.de
-bmg.bund.de										secure match=.bund.de
-bkm.bmi.bund.de									secure match=.bund.de
-bmub.bund.de									secure match=.bund.de
-bmvbs.bund.de									secure match=.bund.de
-bamf.bund.de									secure match=.bund.de
-bfdi.bund.de									secure match=.bund.de
-polizei.bund.de									secure match=.bund.de
-bmelv.bund.de									secure match=.bund.de
-bakoev.bund.de									secure match=.bund.de
-bdbos.bund.de									secure match=.bund.de
-bverwg.bund.de									secure match=.bund.de
-bmas.bund.de									secure match=.bund.de
-bmfsfj.bund.de									secure match=.bund.de
-bafza.bund.de									secure match=.bund.de
+bsi.bund.de										encrypt
+bmg.bund.de										encrypt
+bkm.bmi.bund.de									encrypt
+bmub.bund.de									encrypt
+bmvbs.bund.de									encrypt
+bamf.bund.de									encrypt
+bfdi.bund.de									encrypt
+polizei.bund.de									encrypt
+bmelv.bund.de									encrypt
+bakoev.bund.de									encrypt
+bdbos.bund.de									encrypt
+bverwg.bund.de									encrypt
+bmas.bund.de									encrypt
+bmfsfj.bund.de									encrypt
+bafza.bund.de									encrypt
 bzst.bund.de									encrypt
 badv.bund.de									encrypt
 ti.bund.de										may
 wsv.bund.de										encrypt
 barch.bund.de									encrypt
-bstu.bund.de									secure match=.bund.de
-bund.de											secure match=.bund.de
+bstu.bund.de									encrypt
+bund.de											encrypt
 bundestag.de									secure match=.dbtg.de
 # bundeswehr.org: one mx has a selfsigned cert
 bundeswehr.org									secure match=.bwehr.de
