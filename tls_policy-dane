@@ -246,3 +246,13 @@ bundeswehr.org									secure match=.bwehr.de
 heise.de										secure match=.heise.de
 #broken DNSSEC-TLSA
 mauricedrummen.nl								may
+#molitor und dietzel gbr
+molitor-dietzel.de								dane-only
+kurswahl-online.de								dane-only
+eightysoft.de									dane-only
+akg-jugendchor.de								dane-only
+churhofcap.de									dane-only
+gassiservice-garbsen.de							dane-only
+gassiservice-hannover.de						dane-only
+churpfaelzische-hofcapelle.de					dane-only
+churpfaelzischehofcapelle.de					dane-only

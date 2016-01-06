@@ -246,3 +246,13 @@ bundeswehr.org									secure match=.bwehr.de
 .debian.org										secure match=.debian.org
 .torproject.org									encrypt
 heise.de										secure match=.heise.de
+#molitor und dietzel gbr
+molitor-dietzel.de								secure match=.molitor-dietzel.de
+kurswahl-online.de								secure match=.molitor-dietzel.de
+eightysoft.de									secure match=.molitor-dietzel.de
+akg-jugendchor.de								secure match=.molitor-dietzel.de
+churhofcap.de									secure match=.molitor-dietzel.de
+gassiservice-garbsen.de							secure match=.molitor-dietzel.de
+gassiservice-hannover.de						secure match=.molitor-dietzel.de
+churpfaelzische-hofcapelle.de					secure match=.molitor-dietzel.de
+churpfaelzischehofcapelle.de					secure match=.molitor-dietzel.de
