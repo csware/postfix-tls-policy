@@ -206,7 +206,7 @@ hs-hannover.de									secure match=.fh-hannover.de
 # .bayern.de: mx has selfsigned cert
 .bayern.de										encrypt
 .berlin.de										encrypt
-.hessen.de										secure match=.hessen.de
+.hessen.de										encrypt
 .niedersachsen.de								secure match=.niedersachsen.de
 # banks
 commerzbank.com									secure match=.commerzbank.com
