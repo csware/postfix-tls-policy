@@ -204,7 +204,7 @@ hs-hannover.de									secure match=.fh-hannover.de
 .tu-clausthal.de								secure match=.mx.srv.dfn.de:.tu-clausthal.de
 # states of germany
 .bayern.de										dane-only
-.berlin.de										secure match=.daybyday.de
+.berlin.de										encrypt
 .hessen.de										secure match=.hessen.de
 .niedersachsen.de								secure match=.niedersachsen.de
 # banks

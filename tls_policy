@@ -205,7 +205,7 @@ hs-hannover.de									secure match=.fh-hannover.de
 # states of germany
 # .bayern.de: mx has selfsigned cert
 .bayern.de										encrypt
-.berlin.de										secure match=.daybyday.de
+.berlin.de										encrypt
 .hessen.de										secure match=.hessen.de
 .niedersachsen.de								secure match=.niedersachsen.de
 # banks
