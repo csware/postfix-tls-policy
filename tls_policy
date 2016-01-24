@@ -69,6 +69,7 @@ mac.com											secure match=.mail.icloud.com
 mail.de											secure match=.mail.de
 mailbox.org										secure match=.mailbox.org
 me.com											secure match=.mail.icloud.com
+orange.fr										secure match=.orange.fr
 posteo.de										secure match=.posteo.de
 hotmail.at										secure match=.hotmail.com:.outlook.com
 hotmail.be										secure match=.hotmail.com:.outlook.com
@@ -211,6 +212,8 @@ hs-hannover.de									secure match=.fh-hannover.de
 # banks
 commerzbank.com									secure match=.commerzbank.com
 postbank.de										secure match=.postbank.de
+paypal.de										secure match=.paypalcorp.com
+paypal.com										secure match=.paypalcorp.com
 # insurances
 .aok.de											encrypt
 barmer-gek.de									secure match=.t-systems.com
@@ -245,3 +248,6 @@ bundeswehr.org									secure match=.bwehr.de
 .debian.org										secure match=.debian.org
 .torproject.org									encrypt
 heise.de										secure match=.heise.de
+reply.github.com								secure match=.github.net
+github.com										secure match=.google.com
+gitlab.com										secure match=.google.com
