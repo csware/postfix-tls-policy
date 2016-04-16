@@ -27,7 +27,7 @@ gmx.tm											secure match=.gmx.net
 gmx.us											secure match=.gmx.net
 online.de										secure match=.kundenserver.de
 t-online.de										secure match=.t-online.de
-web.de											secure match=.web.de
+web.de											dane-only
 # other mail providers
 126.com											secure match=.126.com
 aol.asia										secure match=mx.aol.com:.mx.aol.com
