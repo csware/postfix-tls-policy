@@ -5,20 +5,20 @@
 # members of email made in germany
 email.de										secure match=.web.de
 freenet.de										secure match=.freenet.de
-gmx.at											secure match=.gmx.net
+gmx.at											dane-only
 gmx.biz											secure match=.gmx.net
-gmx.ch											secure match=.gmx.net
+gmx.ch											dane-only
 gmx.co.uk										secure match=.gmx.net
-gmx.com											secure match=.gmx.net
+gmx.com											dane-only
 gmx.com.my										secure match=.gmx.net
-gmx.de											secure match=.gmx.net
+gmx.de											dane-only
 gmx.es											secure match=.gmx.net
 gmx.eu											secure match=.gmx.net
 gmx.fr											secure match=.gmx.net
 gmx.hk											secure match=.gmx.net
 gmx.info										secure match=.gmx.net
 gmx.it											secure match=.gmx.net
-gmx.net											secure match=.gmx.net
+gmx.net											dane-only
 gmx.org											secure match=.gmx.net
 gmx.ph											secure match=.gmx.net
 gmx.pt											secure match=.gmx.net
