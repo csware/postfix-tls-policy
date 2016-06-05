@@ -206,7 +206,7 @@ hs-hannover.de									secure match=.fh-hannover.de
 # states of germany
 .bayern.de										dane-only
 .berlin.de										encrypt
-.hessen.de										encrypt
+.hessen.de										secure match=.hessen.de
 .niedersachsen.de								secure match=.niedersachsen.de
 # banks
 commerzbank.com									secure match=.commerzbank.com
@@ -214,7 +214,7 @@ postbank.de										secure match=.postbank.de
 paypal.de										secure match=.paypalcorp.com
 paypal.com										secure match=.paypalcorp.com
 # insurances
-.aok.de											encrypt
+.aok.de											secure match=.aok.de
 barmer-gek.de									secure match=.t-systems.com
 tk.de											secure match=.tk.de
 # others
