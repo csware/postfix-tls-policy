@@ -236,7 +236,7 @@ bmas.bund.de									dane-only
 bmfsfj.bund.de									dane-only
 bafza.bund.de									dane-only
 bsi.bund.de										dane-only
-ti.bund.de										dane
+ti.bund.de										secure match=.mx.srv.dfn.de:.bund.de
 wsv.bund.de										secure match=.bvbs-wan.de:.dwd.de
 barch.bund.de									encrypt
 bstu.bund.de									dane-only

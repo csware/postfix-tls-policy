@@ -237,7 +237,7 @@ bmfsfj.bund.de									encrypt
 bafza.bund.de									encrypt
 bzst.bund.de									encrypt
 badv.bund.de									encrypt
-ti.bund.de										may
+ti.bund.de										secure match=.mx.srv.dfn.de:.bund.de
 wsv.bund.de										encrypt
 barch.bund.de									encrypt
 bstu.bund.de									encrypt
