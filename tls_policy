@@ -151,6 +151,7 @@ outlook.it										secure match=.hotmail.com:.outlook.com
 outlook.my										secure match=.hotmail.com:.outlook.com
 outlook.ph										secure match=.hotmail.com:.outlook.com
 outlook.sg										secure match=.hotmail.com:.outlook.com
+unitymedia.de									secure match=.unitymedia.de
 windowslive.com									secure match=.hotmail.com:.outlook.com
 vodafone.de										secure match=.vodafone.de
 yahoo.at										secure match=.yahoodns.net
