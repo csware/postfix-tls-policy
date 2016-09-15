@@ -196,12 +196,12 @@ ymail.com										secure match=.yahoodns.net
 yandex.ru										secure match=mx.yandex.net:mx.yandex.ru
 # universities
 informatik.hu-berlin.de							secure match=.hu-berlin.de
-hu-berlin.de									dane
+hu-berlin.de									secure match=.hu-berlin.de
 ostfalia.de										secure match=.sonia.de
-fh-hannover.de									secure match=.fh-hannover.de
-hs-hannover.de									secure match=.fh-hannover.de
-#uos.de											secure match=.uni-osnabrueck.de
-#uni-osnabrueck.de								secure match=.uni-osnabrueck.de
+fh-hannover.de									secure match=.fh-hannover.de:.hs-hannover.de
+hs-hannover.de									secure match=.fh-hannover.de:.hs-hannover.de
+uos.de											encrypt
+uni-osnabrueck.de								encrypt
 .tu-clausthal.de								secure match=.mx.srv.dfn.de:.tu-clausthal.de
 # states of germany
 .bayern.de										dane-only
