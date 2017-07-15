@@ -239,7 +239,7 @@ bafza.bund.de									dane-only
 bsi.bund.de										dane-only
 ti.bund.de										secure match=.mx.srv.dfn.de:.bund.de
 wsv.bund.de										secure match=.bvbs-wan.de:.dwd.de
-barch.bund.de									encrypt
+barch.bund.de									dane-only
 bstu.bund.de									dane-only
 bund.de											dane-only
 bundestag.de									secure match=.dbtg.de
