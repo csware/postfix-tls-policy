@@ -153,7 +153,7 @@ outlook.ph										secure match=.hotmail.com:.outlook.com
 outlook.sg										secure match=.hotmail.com:.outlook.com
 unitymedia.de									dane-only
 windowslive.com									secure match=.hotmail.com:.outlook.com
-vodafone.de										secure match=.vodafone.de
+vodafone.de										secure match=.vodafone.de:.oxcloud-vadesecure.net
 yahoo.at										secure match=.yahoodns.net
 yahoo.be										secure match=.yahoodns.net
 yahoo.ca										secure match=.yahoodns.net
