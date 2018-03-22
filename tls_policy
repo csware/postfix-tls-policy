@@ -249,6 +249,6 @@ bundeswehr.org									secure match=.bwehr.de
 .debian.org										encrypt
 .torproject.org									encrypt
 heise.de										secure match=.heise.de
-reply.github.com								secure match=.github.net
+reply.github.com								secure match=.github.com
 github.com										secure match=.google.com
 gitlab.com										secure match=.google.com
