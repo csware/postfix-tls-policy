@@ -1,0 +1,10 @@
+user = db_user
+password = db_password
+hosts = 127.0.0.1
+dbname = db_name
+
+query =
+    SELECT      policy,
+                params
+    FROM        tls_policy
+    WHERE       domain = '%s'
