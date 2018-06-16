@@ -252,3 +252,6 @@ heise.de										secure match=.heise.de
 reply.github.com								secure match=.github.com
 github.com										secure match=.google.com
 gitlab.com										secure match=.google.com
+foi13.de                      secure match=smtp.foi13.de
+halbritters.com               secure match=smtp.halbritters.com
+it15.de                       secure match=smtp.it15.de
