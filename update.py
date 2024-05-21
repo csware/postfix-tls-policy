@@ -25,6 +25,7 @@ parser = argparse.ArgumentParser(formatter_class=argparse.RawTextHelpFormatter, 
 parser.add_argument("--log", metavar='LOGLEVEL', help="Loglevel to log", default="INFO")
 parser.add_argument("--min-security", type=str, choices=[str(x) for x in list(SecurityLevel)], default="dane", help="Minimum TLS policy to use, use 'dane' for automatic 'encrypt' or 'may' if TLSA records are not usable or not present at all.")
 parser.add_argument("--no-dane", default=False, action='store_true', help="Don't use dane, even if available.")
+parser.add_argument("--force-dane", default=False, action='store_true', help="Force dane using 'dane_only' security level if dane could be detected (will use only 'dane' security level otherwise).")
 parser.add_argument("--include-policy", metavar="FILE", action='append', help="Use domains listed given policy file (can be used multiple times).")
 parser.add_argument("--include-connected-to", default=False, action='store_true', help="Use domains logged as connected to in /var/log/mail.log{.1}.")
 parser.add_argument("domain", type=str, help="Use additional domains given on commandline.", nargs="*")
@@ -136,7 +137,7 @@ for domain in all_domains:
     logger.info(f"--> {has_dane = }, {is_secure = }, {is_unmatched = }, {has_starttls = }")
     level = SecurityLevel.none
     if has_dane and not args.no_dane:
-        level = SecurityLevel.dane_only
+        level = SecurityLevel.dane_only if args.force_dane else SecurityLevel.dane
     elif is_secure:
         level = SecurityLevel.secure
     elif is_unmatched:
