@@ -10,6 +10,7 @@ import collections
 import glob
 import itertools
 import gzip
+import time
 import logging, logging.config
 
 import dns.resolver, dns.flags
@@ -285,6 +286,9 @@ for domain in all_domains:
     mx_cert_names = {}
     mx_fingerprints = {}
     for mx in mxlist:
+        # some waiting time to make sure everything is detected properly and not rate-limited etc.
+        time.sleep(1)
+        
         mx_not_existing[mx] = False
         mx_has_dane[mx] = False
         mx_is_verified[mx] = False
