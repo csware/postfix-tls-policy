@@ -1,5 +1,5 @@
-# Generated at 2024-05-24 04:22:29 by https://github/tmolitor-stud-tu/postfix-tls-policy generator
-# Used commandline arguments: ./scripts/update.py --min-security fingerprint --no-mixed-lowest --no-dane [domains...]
+# Generated at 2024-05-24 20:50:45 by https://github/tmolitor-stud-tu/postfix-tls-policy generator
+# Used commandline arguments: ./scripts/update.py --min-security fingerprint --no-mixed-lowest --no-dane --include-policy domains.txt
 
 # Matched cert names for nexthop, dot-nexthop
 126.com		secure match=nexthop:dot-nexthop
@@ -8,88 +8,88 @@
 aok.de		secure match=nexthop:dot-nexthop
 
 # Unmatched cert names, fixing using explictly listed names
-aol.asia		secure match=.yahoodns.net:.biz.mail.yahoo.com
+aol.asia		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-aol.at		secure match=.yahoodns.net:.biz.mail.yahoo.com
+aol.at		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-aol.be		secure match=.yahoodns.net:.biz.mail.yahoo.com
+aol.be		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-aol.ch		secure match=.yahoodns.net:.biz.mail.yahoo.com
+aol.ch		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-aol.cl		secure match=.yahoodns.net:.biz.mail.yahoo.com
+aol.cl		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-aol.co.nz		secure match=.yahoodns.net:.biz.mail.yahoo.com
+aol.co.nz		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-aol.co.uk		secure match=.yahoodns.net:.biz.mail.yahoo.com
+aol.co.uk		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-aol.com		secure match=.yahoodns.net:.biz.mail.yahoo.com
+aol.com		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-aol.com.ar		secure match=.yahoodns.net:.biz.mail.yahoo.com
+aol.com.ar		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-aol.com.au		secure match=.yahoodns.net:.biz.mail.yahoo.com
+aol.com.au		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-aol.com.br		secure match=.yahoodns.net:.biz.mail.yahoo.com
+aol.com.br		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-aol.com.co		secure match=.yahoodns.net:.biz.mail.yahoo.com
+aol.com.co		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-aol.com.mx		secure match=.yahoodns.net:.biz.mail.yahoo.com
+aol.com.mx		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-aol.com.tr		secure match=.yahoodns.net:.biz.mail.yahoo.com
+aol.com.tr		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-aol.com.ve		secure match=.yahoodns.net:.biz.mail.yahoo.com
+aol.com.ve		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-aol.cz		secure match=.yahoodns.net:.biz.mail.yahoo.com
+aol.cz		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-aol.de		secure match=.yahoodns.net:.biz.mail.yahoo.com
+aol.de		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-aol.dk		secure match=.yahoodns.net:.biz.mail.yahoo.com
+aol.dk		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-aol.es		secure match=.yahoodns.net:.biz.mail.yahoo.com
+aol.es		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-aol.fi		secure match=.yahoodns.net:.biz.mail.yahoo.com
+aol.fi		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-aol.fr		secure match=.yahoodns.net:.biz.mail.yahoo.com
+aol.fr		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-aol.in		secure match=.yahoodns.net:.biz.mail.yahoo.com
+aol.in		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-aol.it		secure match=.yahoodns.net:.biz.mail.yahoo.com
+aol.it		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-aol.jp		secure match=.yahoodns.net:.biz.mail.yahoo.com
+aol.jp		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-aol.nl		secure match=.yahoodns.net:.biz.mail.yahoo.com
+aol.nl		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-aol.pl		secure match=.yahoodns.net:.biz.mail.yahoo.com
+aol.pl		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-aol.se		secure match=.yahoodns.net:.biz.mail.yahoo.com
+aol.se		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-aol.tw		secure match=.yahoodns.net:.biz.mail.yahoo.com
+aol.tw		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Matched cert names for nexthop, dot-nexthop
 arcor.de		secure match=nexthop:dot-nexthop
@@ -114,7 +114,7 @@ bamf.bund.de		secure match=nexthop:dot-nexthop:hostname
 barch.bund.de		secure match=nexthop:dot-nexthop:hostname
 
 # Unmatched cert names, fixing using explictly listed names
-barmer-gek.de		secure match=mas.t-systems-service.com:.mas.t-systems-service.com
+barmer-gek.de		secure match=.mas.t-systems-service.com:mas.t-systems-service.com
 
 # Unmatched cert names and untrusted CA, fixing using explict listed fingerprints
 bayern.de		fingerprint match=C0:9A:9B:38:11:4B:13:63:BB:A1:B9:47:98:23:10:9D:DA:FF:DA:64:3A:0B:99:B8:E1:9D:5F:F8:53:77:21:B1
@@ -123,8 +123,8 @@ bayern.de		fingerprint match=C0:9A:9B:38:11:4B:13:63:BB:A1:B9:47:98:23:10:9D:DA:
 # Matched cert names for nexthop, dot-nexthop, hostname
 bdbos.bund.de		secure match=nexthop:dot-nexthop:hostname
 
-# Mixed results: MXs ['secondary.snafu.de'] do not serve a verifiable certificate, ignoring these!
-# Mixed results: MXs ['secondary.snafu.de'] do not have matching hostnames in certificate, ignoring these!
+# WARNING: Mixed results: MXs ['secondary.snafu.de'] do not serve a verifiable certificate, ignoring these!
+# WARNING: Mixed results: MXs ['secondary.snafu.de'] do not have matching hostnames in certificate, ignoring these!
 # Matched cert names for nexthop, dot-nexthop
 berlin.de		secure match=nexthop:dot-nexthop
 
@@ -185,7 +185,7 @@ bverwg.bund.de		secure match=nexthop:dot-nexthop:hostname
 bzst.bund.de		secure match=.bund.de
 
 # Unmatched cert names, fixing using explictly listed names
-commerzbank.com		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+commerzbank.com		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # MX records could be resolved using DNSSEC, we can trust the hostname from DNS for cert validation
 # Matched cert names for nexthop, dot-nexthop, hostname
@@ -199,13 +199,13 @@ email.de		secure match=.web.de
 freenet.de		secure match=nexthop:dot-nexthop:hostname
 
 # Unmatched cert names, fixing using explictly listed names
-github.com		secure match=.google.com:.smtp.goog:.googlemail.com
+github.com		secure match=.google.com:.googlemail.com:.smtp.goog
 
 # Unmatched cert names, fixing using explictly listed names
-gitlab.com		secure match=.google.com:.smtp.goog:.googlemail.com
+gitlab.com		secure match=.google.com:.googlemail.com:.smtp.goog
 
 # Unmatched cert names, fixing using explictly listed names
-gmail.com		secure match=.google.com:.smtp.goog:.googlemail.com
+gmail.com		secure match=.google.com:.googlemail.com:.smtp.goog
 
 # MX records could be resolved using DNSSEC, we can trust the hostname from DNS for cert validation
 # Matched cert names for nexthop, dot-nexthop, hostname
@@ -267,16 +267,13 @@ gmx.pt		secure match=.gmx.net
 gmx.sg		secure match=.gmx.net
 
 # Unmatched cert names, fixing using explictly listed names
-gmx.tm		secure match=.gmx.net
-
-# Unmatched cert names, fixing using explictly listed names
 gmx.us		secure match=.gmx.net
 
 # Matched cert names for nexthop, dot-nexthop
 google.com		secure match=nexthop:dot-nexthop
 
 # Unmatched cert names, fixing using explictly listed names
-googlegroups.com		secure match=.google.com:.smtp.goog:.googlemail.com
+googlegroups.com		secure match=.google.com:.googlemail.com:.smtp.goog
 
 # Matched cert names for nexthop, dot-nexthop
 googlemail.com		secure match=nexthop:dot-nexthop
@@ -288,102 +285,102 @@ heise.de		secure match=nexthop:dot-nexthop
 hessen.de		secure match=nexthop:dot-nexthop
 
 # Unmatched cert names, fixing using explictly listed names
-hotmail.at		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+hotmail.at		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-hotmail.be		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+hotmail.be		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-hotmail.ch		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+hotmail.ch		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-hotmail.co.id		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+hotmail.co.id		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-hotmail.co.jp		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+hotmail.co.jp		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-hotmail.co.kr		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+hotmail.co.kr		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-hotmail.co.nz		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+hotmail.co.nz		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-hotmail.co.th		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+hotmail.co.th		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-hotmail.co.uk		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+hotmail.co.uk		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-hotmail.co.za		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+hotmail.co.za		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Matched cert names for nexthop, dot-nexthop
 hotmail.com		secure match=nexthop:dot-nexthop
 
 # Unmatched cert names, fixing using explictly listed names
-hotmail.com.au		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+hotmail.com.au		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-hotmail.com.hk		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+hotmail.com.hk		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-hotmail.com.tr		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+hotmail.com.tr		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-hotmail.com.tw		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+hotmail.com.tw		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-hotmail.com.vn		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+hotmail.com.vn		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # MX records could be resolved using DNSSEC, we can trust the hostname from DNS for cert validation
 # Matched cert names for nexthop, dot-nexthop, hostname
 hotmail.cz		secure match=nexthop:dot-nexthop:hostname
 
 # Unmatched cert names, fixing using explictly listed names
-hotmail.de		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+hotmail.de		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-hotmail.dk		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+hotmail.dk		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-hotmail.es		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+hotmail.es		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-hotmail.fi		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+hotmail.fi		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-hotmail.fr		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+hotmail.fr		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-hotmail.gr		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+hotmail.gr		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-hotmail.it		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+hotmail.it		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-hotmail.my		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+hotmail.my		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # MX records could be resolved using DNSSEC, we can trust the hostname from DNS for cert validation
 # Matched cert names for nexthop, dot-nexthop, hostname
 hotmail.nl		secure match=nexthop:dot-nexthop:hostname
 
 # Unmatched cert names, fixing using explictly listed names
-hotmail.no		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+hotmail.no		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-hotmail.ph		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+hotmail.ph		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-hotmail.rs		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+hotmail.rs		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-hotmail.se		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+hotmail.se		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-hotmail.sg		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+hotmail.sg		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-hs-hannover.de		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+hs-hannover.de		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Matched cert names for nexthop, dot-nexthop
 hu-berlin.de		secure match=nexthop:dot-nexthop
@@ -399,91 +396,91 @@ informatik.hu-berlin.de		secure match=nexthop:dot-nexthop
 kabelmail.de		secure match=nexthop:dot-nexthop:hostname
 
 # Unmatched cert names, fixing using explictly listed names
-live.at		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+live.at		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-live.be		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+live.be		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-live.ca		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+live.ca		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-live.cl		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+live.cl		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-live.cn		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+live.cn		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-live.co.kr		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+live.co.kr		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-live.co.uk		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+live.co.uk		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-live.co.za		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+live.co.za		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-live.com		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+live.com		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-live.com.ar		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+live.com.ar		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-live.com.au		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+live.com.au		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-live.com.mx		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+live.com.mx		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-live.com.my		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+live.com.my		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-live.com.ph		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+live.com.ph		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-live.com.pt		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+live.com.pt		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-live.com.sg		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+live.com.sg		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-live.de		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+live.de		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-live.dk		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+live.dk		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-live.fr		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+live.fr		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-live.hk		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+live.hk		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-live.ie		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+live.ie		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-live.in		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+live.in		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-live.it		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+live.it		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-live.jp		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+live.jp		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-live.nl		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+live.nl		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-live.no		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+live.no		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-live.ru		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+live.ru		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-live.se		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+live.se		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-livemail.tw		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+livemail.tw		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
 mac.com		secure match=.mail.icloud.com
@@ -492,8 +489,8 @@ mac.com		secure match=.mail.icloud.com
 # Matched cert names for nexthop, dot-nexthop, hostname
 mail.de		secure match=nexthop:dot-nexthop:hostname
 
-# Mixed results: MXs ['mx-n.mailbox.org'] do not serve a verifiable certificate, ignoring these!
-# Mixed results: MXs ['mx-n.mailbox.org'] do not provide TLS at all, ignoring these!
+# WARNING: Mixed results: MXs ['mx-n.mailbox.org'] do not serve a verifiable certificate, ignoring these!
+# WARNING: Mixed results: MXs ['mx-n.mailbox.org'] do not provide TLS at all, ignoring these!
 # MX records could be resolved using DNSSEC, we can trust the hostname from DNS for cert validation
 # Matched cert names for nexthop, dot-nexthop, hostname
 mailbox.org		secure match=nexthop:dot-nexthop:hostname
@@ -502,7 +499,7 @@ mailbox.org		secure match=nexthop:dot-nexthop:hostname
 me.com		secure match=.mail.icloud.com
 
 # Unmatched cert names, fixing using explictly listed names
-msn.cn		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+msn.cn		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Matched cert names for nexthop, dot-nexthop
 netcologne.de		secure match=nexthop:dot-nexthop
@@ -511,7 +508,7 @@ netcologne.de		secure match=nexthop:dot-nexthop
 niedersachsen.de		secure match=nexthop:dot-nexthop
 
 # Unmatched cert names, fixing using explictly listed names
-online.de		secure match=.kundenserver.de:.ionos.it:.ionos.de:.ionos.fr:.ionos.co.uk:.ionos.es
+online.de		secure match=.ionos.co.uk:.ionos.de:.ionos.es:.ionos.fr:.ionos.it:.kundenserver.de
 
 # Matched cert names for nexthop, dot-nexthop
 orange.fr		secure match=nexthop:dot-nexthop
@@ -520,31 +517,31 @@ orange.fr		secure match=nexthop:dot-nexthop
 ostfalia.de		secure match=.sonia.de
 
 # Unmatched cert names, fixing using explictly listed names
-outlook.at		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+outlook.at		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-outlook.be		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+outlook.be		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-outlook.co.id		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+outlook.co.id		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-outlook.co.jp		secure match=.mx.microsoft:.xserver.jp:xserver.jp:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+outlook.co.jp		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:.xserver.jp:mail.messaging.microsoft.com:outlook.com:xserver.jp
 
 # Unmatched cert names, fixing using explictly listed names
-outlook.co.nz		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+outlook.co.nz		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-outlook.co.th		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+outlook.co.th		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Matched cert names for nexthop, dot-nexthop
 outlook.com		secure match=nexthop:dot-nexthop
 
 # Unmatched cert names, fixing using explictly listed names
-outlook.com.au		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+outlook.com.au		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-outlook.com.tr		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+outlook.com.tr		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # MX records could be resolved using DNSSEC, we can trust the hostname from DNS for cert validation
 # Matched cert names for nexthop, dot-nexthop, hostname
@@ -554,25 +551,25 @@ outlook.cz		secure match=nexthop:dot-nexthop:hostname
 outlook.de		secure match=nexthop:dot-nexthop
 
 # Unmatched cert names, fixing using explictly listed names
-outlook.dk		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+outlook.dk		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-outlook.es		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+outlook.es		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-outlook.fr		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+outlook.fr		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-outlook.it		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+outlook.it		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-outlook.my		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+outlook.my		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-outlook.ph		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+outlook.ph		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
-outlook.sg		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+outlook.sg		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # MX records could be resolved using DNSSEC, we can trust the hostname from DNS for cert validation
 # Matched cert names for nexthop, dot-nexthop, hostname
@@ -594,7 +591,7 @@ postbank.de		secure match=nexthop:dot-nexthop
 posteo.de		secure match=nexthop:dot-nexthop:hostname
 
 # Unmatched cert names, fixing using explictly listed names
-reply.github.com		secure match=.smtp.github.com:smtp.github.com:.smtp.ghe.com:smtp.ghe.com
+reply.github.com		secure match=.smtp.ghe.com:.smtp.github.com:smtp.ghe.com:smtp.github.com
 
 # Matched cert names for nexthop, dot-nexthop
 t-online.de		secure match=nexthop:dot-nexthop
@@ -606,16 +603,16 @@ tk.de		secure match=nexthop:dot-nexthop
 torproject.org		fingerprint match=17:AE:A2:13:F8:4C:C0:84:D8:24:A3:27:A9:8B:E2:40:08:75:4F:32:59:F7:A9:BE:BA:4D:4C:9A:96:26:13:0F
 
 # Unmatched cert names, fixing using explictly listed names
-tu-clausthal.de		secure match=mx.srv.dfn.de:.mx.srv.dfn.de
+tu-clausthal.de		secure match=.mx.srv.dfn.de:mx.srv.dfn.de
 
 # Unmatched cert names, fixing using explictly listed names
-uni-osnabrueck.de		secure match=mx.srv.dfn.de:.mx.srv.dfn.de
+uni-osnabrueck.de		secure match=.mx.srv.dfn.de:mx.srv.dfn.de
 
 # Unmatched cert names and untrusted CA, fixing using explict listed fingerprints
 unitymedia.de		fingerprint match=BE:B0:F6:71:8C:1A:69:74:C4:06:56:0A:30:9E:4D:72:50:4E:BE:2D:2B:8D:CE:EC:9F:EA:95:2F:48:C9:D7:EB
 
 # Unmatched cert names, fixing using explictly listed names
-uos.de		secure match=mx.srv.dfn.de:.mx.srv.dfn.de
+uos.de		secure match=.mx.srv.dfn.de:mx.srv.dfn.de
 
 # Matched cert names for nexthop, dot-nexthop
 vodafone.de		secure match=nexthop:dot-nexthop
@@ -625,131 +622,131 @@ vodafone.de		secure match=nexthop:dot-nexthop
 web.de		secure match=nexthop:dot-nexthop:hostname
 
 # Unmatched cert names, fixing using explictly listed names
-windowslive.com		secure match=.mx.microsoft:outlook.com:.outlook.com:.mail.protection.outlook.de:.pamx1.hotmail.com:mail.messaging.microsoft.com
+windowslive.com		secure match=.mail.protection.outlook.de:.mx.microsoft:.outlook.com:.pamx1.hotmail.com:mail.messaging.microsoft.com:outlook.com
 
 # Unmatched cert names, fixing using explictly listed names
 wsv.bund.de		secure match=.gbbmvi-wan.de
 
 # Unmatched cert names, fixing using explictly listed names
-yahoo.at		secure match=.yahoodns.net:.biz.mail.yahoo.com
+yahoo.at		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-yahoo.be		secure match=.yahoodns.net:.biz.mail.yahoo.com
+yahoo.be		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-yahoo.ca		secure match=.yahoodns.net:.biz.mail.yahoo.com
+yahoo.ca		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-yahoo.co.id		secure match=.yahoodns.net:.biz.mail.yahoo.com
+yahoo.co.id		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-yahoo.co.il		secure match=.yahoodns.net:.biz.mail.yahoo.com
+yahoo.co.il		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-yahoo.co.in		secure match=.yahoodns.net:.biz.mail.yahoo.com
+yahoo.co.in		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Matched cert names for nexthop, dot-nexthop
 yahoo.co.jp		secure match=nexthop:dot-nexthop
 
 # Unmatched cert names, fixing using explictly listed names
-yahoo.co.nz		secure match=.yahoodns.net:.biz.mail.yahoo.com
+yahoo.co.nz		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-yahoo.co.th		secure match=.yahoodns.net:.biz.mail.yahoo.com
+yahoo.co.th		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-yahoo.co.uk		secure match=.yahoodns.net:.biz.mail.yahoo.com
+yahoo.co.uk		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-yahoo.co.za		secure match=.yahoodns.net:.biz.mail.yahoo.com
+yahoo.co.za		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Matched cert names for nexthop, dot-nexthop
 yahoo.com		secure match=nexthop:dot-nexthop
 
 # Unmatched cert names, fixing using explictly listed names
-yahoo.com.ar		secure match=.yahoodns.net:.biz.mail.yahoo.com
+yahoo.com.ar		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-yahoo.com.br		secure match=.yahoodns.net:.biz.mail.yahoo.com
+yahoo.com.br		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-yahoo.com.co		secure match=.yahoodns.net:.biz.mail.yahoo.com
+yahoo.com.co		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-yahoo.com.hk		secure match=.yahoodns.net:.biz.mail.yahoo.com
+yahoo.com.hk		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-yahoo.com.my		secure match=.yahoodns.net:.biz.mail.yahoo.com
+yahoo.com.my		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-yahoo.com.ph		secure match=.yahoodns.net:.biz.mail.yahoo.com
+yahoo.com.ph		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-yahoo.com.sg		secure match=.yahoodns.net:.biz.mail.yahoo.com
+yahoo.com.sg		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-yahoo.com.tr		secure match=.yahoodns.net:.biz.mail.yahoo.com
+yahoo.com.tr		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-yahoo.com.tw		secure match=.yahoodns.net:.biz.mail.yahoo.com
+yahoo.com.tw		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-yahoo.com.vn		secure match=.yahoodns.net:.biz.mail.yahoo.com
+yahoo.com.vn		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-yahoo.cz		secure match=.yahoodns.net:.biz.mail.yahoo.com
+yahoo.cz		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-yahoo.de		secure match=.yahoodns.net:.biz.mail.yahoo.com
+yahoo.de		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-yahoo.dk		secure match=.yahoodns.net:.biz.mail.yahoo.com
+yahoo.dk		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-yahoo.es		secure match=.yahoodns.net:.biz.mail.yahoo.com
+yahoo.es		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-yahoo.fi		secure match=.yahoodns.net:.biz.mail.yahoo.com
+yahoo.fi		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-yahoo.fr		secure match=.yahoodns.net:.biz.mail.yahoo.com
+yahoo.fr		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-yahoo.gr		secure match=.yahoodns.net:.biz.mail.yahoo.com
+yahoo.gr		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-yahoo.hu		secure match=.yahoodns.net:.biz.mail.yahoo.com
+yahoo.hu		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-yahoo.ie		secure match=.yahoodns.net:.biz.mail.yahoo.com
+yahoo.ie		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-yahoo.in		secure match=.yahoodns.net:.biz.mail.yahoo.com
+yahoo.in		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-yahoo.it		secure match=.yahoodns.net:.biz.mail.yahoo.com
+yahoo.it		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-yahoo.nl		secure match=.yahoodns.net:.biz.mail.yahoo.com
+yahoo.nl		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-yahoo.no		secure match=.yahoodns.net:.biz.mail.yahoo.com
+yahoo.no		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-yahoo.pl		secure match=.yahoodns.net:.biz.mail.yahoo.com
+yahoo.pl		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-yahoo.pt		secure match=.yahoodns.net:.biz.mail.yahoo.com
+yahoo.pt		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-yahoo.ro		secure match=.yahoodns.net:.biz.mail.yahoo.com
+yahoo.ro		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Unmatched cert names, fixing using explictly listed names
-yahoo.se		secure match=.yahoodns.net:.biz.mail.yahoo.com
+yahoo.se		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
 # Matched cert names for nexthop, dot-nexthop
 yandex.ru		secure match=nexthop:dot-nexthop
 
 # Unmatched cert names, fixing using explictly listed names
-ymail.com		secure match=.yahoodns.net:.biz.mail.yahoo.com
+ymail.com		secure match=.biz.mail.yahoo.com:.yahoodns.net
 
