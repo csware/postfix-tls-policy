@@ -179,13 +179,16 @@ if args.include_connected_to:
     policy_dir=os.path.dirname(sys.argv[0])
     for filename in ("/var/log/mail.log", "/var/log/mail.log.1"):
         logger.info(f"Extracting domains from '{filename}'...")
-        proc = subprocess.Popen(["perl", f"{policy_dir}/extract-domains.pl", filename], stdout=subprocess.PIPE)
-        while True:
-            line = proc.stdout.readline()
-            if not line:
-                break
-            domain = line.decode("utf-8").split(":")[0]
-            used_domains.add(domain)
+        #May 24 08:20:55 srv1 postfix/smtp[26806]: 49C05220A5C: to=<test@md-textil.de>, relay=mx.md-textil.de[1.2.3.4]:25, delay=3.2, delays=2.8/0.02/0.24/0.08, dsn=2.0.0, status=sent (250 2.0.0 Message accepted.)
+        with open(filename, "r") as fp:
+            pattern = re.compile(r"^\S+ \d+ \d+:\d+:\d+ \S+ .*/smtp\[\d+\]: [^:]+: to=<[^@]+@([^>]+)>, .*, status=sent")
+            while True:
+                line = fp.readline()
+                if not line:
+                    break
+                matches = re.match(pattern, line)
+                if matches:
+                    used_domains.add(matches.group(1)) 
 
 # load domains from policy files
 policy_domains = set()
