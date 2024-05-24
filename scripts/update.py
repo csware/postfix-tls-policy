@@ -337,6 +337,9 @@ for domain in all_domains:
             cert_names.update(mx_cert_names[mx])
             fingerprints.update(mx_fingerprints[mx])
     common_cert_suffixes = generate_suffix_matchlist(list(cert_names))
+    common_cert_suffixes.sort()
+    fingerprints = list(fingerprints)
+    fingerprints.sort()
     
     # log raw results
     logger.info(f"--> {is_dnssec = }, {has_dane = }, {is_verified = }, {is_unmatched = }, {has_starttls = }, {common_cert_suffixes = }, {cert_names = }, {fingerprints = }")
