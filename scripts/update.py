@@ -30,6 +30,7 @@ class SecurityLevel(enum.IntEnum):
 
 def merge_all_mxs(to_filter, default_value, value_name, comments=[], no_fallback=None):
     retval = [mx for mx, value in to_filter.items() if value != default_value]
+    retval.sort()
     if len(retval) == 0:
         return default_value
     elif len(retval) == len(to_filter):
