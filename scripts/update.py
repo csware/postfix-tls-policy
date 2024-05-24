@@ -196,7 +196,7 @@ if args.include_from_log:
                     break
                 matches = re.match(pattern, line.decode("utf-8"))
                 if matches:
-                    used_domains.add(matches.group(1)) 
+                    used_domains.add(matches.group(1).lower()) 
 
 # load domains from policy files
 policy_domains = set()
@@ -217,7 +217,7 @@ if args.include_policy:
                 if matches and matches.group(2):    # ignore comments
                     has_dot = True if len(matches.group(3)) else False
                     domain = matches.group(4)
-                    policy_domains.add(domain)
+                    policy_domains.add(domain.lower())
 
 # merge all loaded domains
 all_domains = used_domains.union(policy_domains)
