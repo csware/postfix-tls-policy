@@ -244,6 +244,9 @@ for name, translation in common_finger_args.items():
             configured_finger_args += ["-o", f"{name}={value}"];
 
 # iterate over all domains and print calculated policy to stdout
+# (make sure this is always sorted to give stable diff output)
+all_domains = list(all_domains)
+all_domains.sort()
 # see https://www.postfix.org/FORWARD_SECRECY_README.html#status for the meaning of "Verified" and "Trusted"
 dane_regex = re.compile(r"^posttls-finger: using DANE RR:.*$")
 verified_regex = re.compile(r"^posttls-finger: Verified TLS connection established.*$")
