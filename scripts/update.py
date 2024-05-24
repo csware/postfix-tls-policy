@@ -7,6 +7,9 @@ import argparse
 import enum
 import datetime
 import collections
+import glob
+import itertools
+import gzip
 import logging, logging.config
 
 import dns.resolver, dns.flags
@@ -34,11 +37,11 @@ def merge_all_mxs(to_filter, default_value, value_name, comments=[], no_fallback
     if len(retval) != len(to_filter):
         if isinstance(no_fallback, set):
             logger.warning(f"Mixed results: MXs {retval} {value_name}, ignoring these!")
-            comments.append(f"Mixed results: MXs {retval} {value_name}, ignoring these!")
+            comments.append(f"WARNING: Mixed results: MXs {retval} {value_name}, ignoring these!")
             no_fallback.update(set([mx for mx, value in to_filter.items() if value == default_value]))
             return default_value
         logger.warning(f"Mixed results: MXs {retval} {value_name}, dropping support!")
-        comments.append(f"Mixed results: MXs {retval} {value_name}, dropped support!")
+        comments.append(f"WARNING: Mixed results: MXs {retval} {value_name}, dropped support!")
         return not default_value
 
 def resolve_mx(domain):
@@ -114,6 +117,11 @@ def start_finger(*args):
     logger.debug(f"Calling: {' '.join(args)}")
     return subprocess.Popen(args, stdout=subprocess.PIPE)
 
+# see https://stackoverflow.com/a/47080739
+def is_gzip_file(filename):
+    with open(filename, "rb") as fp:
+        return fp.read(2) == b'\x1f\x8b'
+
 
 # initialize logging as early as possible
 logger_config = {
@@ -134,7 +142,7 @@ logger_config = {
     },
     "loggers": {
         "": {
-            "level": "WARNING",
+            "level": "INFO",
             "handlers": ["stderr"]
         }
     }
@@ -146,7 +154,7 @@ logger.info('Logger configured...')
 # parse commandline
 security_levels_list = [str(x) for x in list(SecurityLevel)]
 parser = argparse.ArgumentParser(formatter_class=argparse.RawTextHelpFormatter, description="Postfix TLS policy generator")
-parser.add_argument("--log", metavar='LOGLEVEL', help="Loglevel to log", default="INFO")
+parser.add_argument("--log", help="Loglevel to log (default: INFO)", choices=["CRITICAL", "ERROR", "WARNING", "INFO", "DEBUG"], default="INFO")
 parser.add_argument("--min-security", type=str, choices=security_levels_list, default="dane", help="Minimum TLS policy to use, use 'dane' for automatic 'encrypt' or 'may' if TLSA records are not usable or not present at all.")
 parser.add_argument("--ignore-lower-than-config", default=False, action='store_true', help="Don't output policy rules that would configure a domain lower than without a policy file (using the current postfix setting 'smtp_tls_security_level').")
 parser.add_argument("--mixed-lowest", default=True, action=argparse.BooleanOptionalAction, help="Use lowest/highest denominator for security level if the set of MX servers give different results.")
@@ -154,8 +162,8 @@ parser.add_argument("--no-dnssec", default=False, action='store_true', help="Don
 parser.add_argument("--no-dane", default=False, action='store_true', help="Don't use dane, even if available.")
 parser.add_argument("--force-dane-only", default=False, action='store_true', help="Force dane using 'dane_only' security level if dane could be detected (will use only 'dane' security level otherwise).")
 parser.add_argument("--include-policy", metavar="FILE", action='append', help="Use domains listed given policy file (can be used multiple times).")
-parser.add_argument("--include-connected-to", default=False, action='store_true', help="Use domains logged as connected to in /var/log/mail.log{.1}.")
-parser.add_argument("domain", type=str, help="Use additional domains given on commandline.", nargs="*")
+parser.add_argument("--include-from-log", metavar="FILE", action="append", nargs="+", help="Use domains logged as connected to in given policy file.")
+parser.add_argument("domain", metavar="[--] DOMAIN", type=str, help="Use additional domains given on commandline. Use '--' to separate them from files listed for --include-from-log (if used).", nargs="*")
 args = parser.parse_args()
 
 # check arguments
@@ -175,18 +183,18 @@ if args.ignore_lower_than_config and config_trust_level not in security_levels_l
 
 # load domains from logfiles
 used_domains = set()
-if args.include_connected_to:
-    policy_dir=os.path.dirname(sys.argv[0])
-    for filename in ("/var/log/mail.log", "/var/log/mail.log.1"):
+if args.include_from_log:
+    #May 24 08:20:55 srv1 postfix/smtp[26806]: 49C05220A5C: to=<test@md-textil.de>, relay=mx.md-textil.de[1.2.3.4]:25, delay=3.2, delays=2.8/0.02/0.24/0.08, dsn=2.0.0, status=sent (250 2.0.0 Message accepted.)
+    pattern = re.compile(r"^\S+ \d+ \d+:\d+:\d+ \S+ .*/smtp\[\d+\]: [^:]+: to=<[^@]+@([^>]+)>, .*, status=sent")
+    files = list(itertools.chain.from_iterable([glob.glob(x) for x in itertools.chain.from_iterable(args.include_from_log)]))
+    for filename in files:
         logger.info(f"Extracting domains from '{filename}'...")
-        #May 24 08:20:55 srv1 postfix/smtp[26806]: 49C05220A5C: to=<test@md-textil.de>, relay=mx.md-textil.de[1.2.3.4]:25, delay=3.2, delays=2.8/0.02/0.24/0.08, dsn=2.0.0, status=sent (250 2.0.0 Message accepted.)
-        with open(filename, "r") as fp:
-            pattern = re.compile(r"^\S+ \d+ \d+:\d+:\d+ \S+ .*/smtp\[\d+\]: [^:]+: to=<[^@]+@([^>]+)>, .*, status=sent")
+        with gzip.open(filename, "rb") if is_gzip_file(filename) else open(filename, "rb") as fp:
             while True:
                 line = fp.readline()
                 if not line:
                     break
-                matches = re.match(pattern, line)
+                matches = re.match(pattern, line.decode("utf-8"))
                 if matches:
                     used_domains.add(matches.group(1)) 
 
@@ -217,7 +225,7 @@ if args.domain:
     logger.info(f"Domains supplied on comandline: {set(args.domain)}")
 if args.domain:
     all_domains = all_domains.union(set(args.domain))
-logger.info(f"Extracted {len(used_domains)} domains from mail.log(.1), {len(policy_domains)} domains from policy files and added {len(args.domain)} domains from commandline ({len(all_domains)} domains in summary)...")
+logger.info(f"Extracted {len(used_domains)} domain(s) from logfile(s), {len(policy_domains)} domain(s) from policy file(s) and added {len(args.domain)} domain(s) from commandline ({len(all_domains)} domain(s) in summary)...")
 if not len(all_domains):
     logger.error(f"No domains to check, terminating...")
     sys.exit(2)
@@ -374,7 +382,7 @@ for domain in all_domains:
     # force minimal security level if requested
     if level < args.min_security:
         logger.warning(f"Increasing security level from '{level}' to minimum allowed '{args.min_security}' for domain: {domain}")
-        comments.append(f"Increased security level from '{level}' to minimum allowed '{args.min_security}'")
+        comments.append(f"WARNING: Increased security level from '{level}' to minimum allowed '{args.min_security}'")
         
         # overwrites needed
         if args.min_security == SecurityLevel.dane:
@@ -389,18 +397,18 @@ for domain in all_domains:
                 levelargs = "match=" + "|".join(fingerprints)
             else:
                 logger.warning(f"Increasing security level will likely make domain unusable and/or config-line invalid!")
-                comments.append(f"Increased security level will likely make domain unusable and/or config-line invalid!")
+                comments.append(f"WARNING: Increased security level will likely make domain unusable and/or config-line invalid!")
         elif args.min_security == SecurityLevel.secure:
             # using a common_cert_suffixes match probably won't work
             level = SecurityLevel.secure
             levelargs = "match=" + ":".join(common_cert_suffixes)
             logger.warning(f"Increasing security level will likely make domain unusable and/or config-line invalid!")
-            comments.append(f"Increased security level will likely make domain unusable and/or config-line invalid!")
+            comments.append(f"WARNING: Increased security level will likely make domain unusable and/or config-line invalid!")
         elif args.min_security == SecurityLevel.dane_only:
             level = args.min_security
             levelargs = ""
             logger.warning(f"Increasing security level will likely make domain unusable and/or config-line invalid!")
-            comments.append(f"Increased security level will likely make domain unusable and/or config-line invalid!")
+            comments.append(f"WARNING: Increased security level will likely make domain unusable and/or config-line invalid!")
     
     # output postfix policy map line(s) to stdout
     if args.ignore_lower_than_config and level <= SecurityLevel[config_trust_level]:
