@@ -274,8 +274,14 @@ for domain in all_domains:
     if args.no_dnssec:
         is_dnssec = False
     if not len(mxlist):
-        logger.warning(f"Ignoring domain with nonexisting MX record: {domain}")
-        continue
+        logger.warning(f"Domain '{domain}' apparently without MX records, trying to resolve again...")
+        time.sleep(4)
+        is_dnssec, mxlist = resolve_mx(domain)
+        if args.no_dnssec:
+            is_dnssec = False
+        if not len(mxlist):
+            logger.warning(f"Ignoring domain with nonexisting MX record: {domain}")
+            continue
     logger.info(f"--> {is_dnssec = }, {mxlist = }")
     
     mx_not_existing = {}
