@@ -48,6 +48,7 @@ def merge_all_mxs(to_filter, default_value, value_name, comments=[], no_fallback
 
 def resolve_mx(domain):
     resolver = dns.resolver.Resolver(configure=True)
+    resolver.edns = True
     resolver.ednsflags |= dns.flags.EDNSFlag.DO
     try:
         result = resolver.resolve(domain, "MX")
