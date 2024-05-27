@@ -6,7 +6,7 @@ import collections
 
 from publicsuffix2 import get_sld
 
-domains = collections.defaultdict(list)
+domains = collections.defaultdict(set)
 
 filename=sys.argv[1]
 with open(filename, 'r') as fp:
@@ -18,7 +18,7 @@ with open(filename, 'r') as fp:
             break
         matches = re.match(pattern, line)
         if matches and matches.group(2):    # ignore comments
-            domains[get_sld(matches.group(4))].append(matches.group(4).lower())
+            domains[get_sld(matches.group(4))].add(matches.group(4).lower())
 
 with open(filename, 'w') as fp:
      for k, domains in sorted(domains.items()):
